@@ -1,0 +1,48 @@
+@mixin transition($transition...)
+  @if length($transition) == 0
+    $transition: all 0.5s ease
+  transition: $transition
+  -moz-transition: $transition
+  -webkit-transition: $transition
+  -o-transition: $transition
+  
+@mixin transition-delay($delay)
+  transition-delay: $delay
+  -webkit-transition-delay: $delay
+  
+// Yeah Mr. White! EASINGS!
+$easeInOutBack: cubic-bezier(0.680, -0.550, 0.265, 1.550)
+$easeInOutCirc: cubic-bezier(0.785, 0.135, 0.150, 0.860)
+$easeInOutQuad: cubic-bezier(0.455, 0.030, 0.515, 0.955)
+// See more: http://matthewlein.com/ceaser/
+
+@mixin inline-block
+  display: inline-block
+  vertical-align: baseline
+  zoom: 1
+  *display: inline
+  *vertical-align: auto
+
+
+@mixin gradient($from : black, $to : white)
+  background-color: $from
+  background-image: -moz-linear-gradient(top, $from, $to)
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, $from),color-stop(1, $to))
+  background-image: linear-gradient(top, $from, $to)
+  
+@mixin gradient-horizontal($from, $to)
+  background: $from
+  background: -moz-linear-gradient(left, $from 0%, $to 100%)
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,$from), color-stop(100%,$to))
+ 
+
+@mixin rotate($value)
+  transform: rotate($value+deg)
+  -ms-transform: rotate($value+deg)
+  -webkit-transform: rotate($value+deg)
+  
+@mixin calc($property, $expression) 
+  #{$property}: -webkit-calc(#{$expression})
+  #{$property}: -moz-calc(#{$expression})
+  #{$property}: calc(#{$expression})
+
