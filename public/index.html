@@ -10,34 +10,64 @@
     <link charset='utf-8' href='stylesheets/main.css' media='screen' rel='stylesheet' type='text/css'>
     <script src='javascripts/html5shiv.js'></script>
     <script src='javascripts/jquery.1.11.min.js'></script>
+    <script src='javascripts/jquery.easing.1.3.js'></script>
     <script src='javascripts/apps.js'></script>
   </head>
   <body>
-    <div id='nav'>
-      <a href='index.html#sponsors' title='Sponsors'>
-        <i class='fa fa-university'></i>
-      </a>
-      <a href='index.html#speakers' title='Speakers'>
-        <i class='fa fa-users'></i>
-      </a>
-      <a href='call_for_papers.html' title='Call for papers'>
-        <i class='fa fa-send'></i>
-      </a>
+    <nav>
+      <a class='nav-item' href='#start'>Start</a>
+      <a class='nav-item' href='#speakers'>Speakers</a>
+      <a class='nav-item' href='#sponsors'>Sponsors</a>
+      <!-- %a.nav-item{:href => "#cfp"} Call for papers -->
       <a href='https://www.facebook.com/rubyconfar' target='_blank'>
         <i class='fa fa-facebook'></i>
       </a>
       <a href='https://twitter.com/RubyConfAR' target='_blank'>
         <i class='fa fa-twitter'></i>
       </a>
-    </div>
-    <header>
+    </nav>
+    <section id='start'>
       <hgroup>
         <h1>
           <img alt='Rubyconf Argentina | Octubre 24 / 25, 2014' height='244' src='images/rubyconf.png' width='462'>
         </h1>
         <h2>Ciudad Cultural Konex</h2>
       </hgroup>
-    </header>
+    </section>
+    <section id='speakers'>
+      <article class='wrapper'>
+        <h2>Speakers</h2>
+        <a href='call_for_papers.html'>Call For Papers</a>
+      </article>
+    </section>
+    <section id='sponsors'>
+      <article class='wrapper'>
+        <h2>Sponsors</h2>
+        <p>
+          <a href='mailto:rubyconfar@gmail.com?&amp;subject=[RubyConfAr] Consulta sobre Sponsoreo.'>Envianos un email</a>
+          y te contaremos cómo tu empresa puede aprovechar esta gran oportunidad.
+        </p>
+      </article>
+    </section>
+    <footer class='wrapper'>
+      <h4>RubyConf Argentina es organizada por RAAC, una asociación sin fines de lucro dedicada a promover el crecimiento de Ruby y tecnologías relacionadas.</h4>
+      <h5>
+        Eventos anteriores:
+        <a href='http://2011.rubyconfargentina.org'>2011,</a>
+        <a href='http://2012.rubyconfargentina.org'>2012,</a>
+        <a href='http://2013.rubyconfargentina.org'>2013.</a>
+      </h5>
+      <p>La organización del evento se reserva el derecho de admisión y permanencia conforme con lo establecido en la legislación vigente.</p>
+      <a href='https://www.facebook.com/rubyconfar' target='_blank'>
+        <i class='fa fa-facebook-square'></i>
+      </a>
+      <a href='https://twitter.com/RubyConfAR' target='_blank'>
+        <i class='fa fa-twitter-square'></i>
+      </a>
+      <a href='http://vimeo.com/rubyargentina' target='_blank'>
+        <i class='fa fa-vimeo-square'></i>
+      </a>
+    </footer>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

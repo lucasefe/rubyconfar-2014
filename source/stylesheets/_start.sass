@@ -1,0 +1,41 @@
+section#start
+
+  background: url(../images/main.png) no-repeat top center, url(../images/bkg.png) repeat-x top center
+  background-size: auto 100%
+  &.horse
+    background: url(../images/horse.png) no-repeat top center, url(../images/bkg.png) repeat-x top center
+    background-size: auto 100%
+  &.woz
+    background: url(../images/woz.png) no-repeat top center, url(../images/bkg.png) repeat-x top center
+    background-size: auto 100%
+  &.moss
+    background: url(../images/moss.png) no-repeat top center, url(../images/bkg.png) repeat-x top center
+    background-size: auto 100%
+
+  hgroup
+    bottom: 200px
+    left: 40px
+    max-width: 30%
+    position: absolute
+    text-align: center
+    img
+      max-width: 100%
+      height: auto
+
+  h2
+    font-weight: 600
+    font-size: 1.25em
+    text-transform: uppercase
+
+  @media screen and (max-width: 500px)
+    hgroup
+      @include gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+      bottom: 0
+      left: 0
+      max-width: 100%
+      padding-bottom: 50px
+      width: 100%
+      img
+        max-width: 70%
+    h2
+      font-size: 1.0em

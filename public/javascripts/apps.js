@@ -1,13 +1,24 @@
 
 $(document).ready(function() {
-  $("header").height($(window).height());
+  $("section").height($(window).height());
 
   var arr = ['horse', 'erlich', 'woz', 'moss'];
   var idx = Math.floor(Math.random() * arr.length);
-  $('header').addClass(arr[idx]);
+  $('section#start').addClass(arr[idx]);
+
+
+  $("nav a.nav-item").click(function() {
+    $(this).siblings().removeClass('active');
+    $(this).toggleClass('active');
+    event.preventDefault();
+    var $anchor = $('#' + this.hash.substring(1));
+    $('html,body').animate({ 
+        scrollTop: $anchor.offset().top
+    }, 999, 'easeInOutBack');
+  });
 
 });
 
 $(window).resize(function() {
-	$("header").height($(window).height());
+	$("section").height($(window).height());
 });
