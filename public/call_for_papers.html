@@ -14,6 +14,16 @@
     <script src='javascripts/apps.js'></script>
   </head>
   <body>
+    <div id='fb-root'></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <nav>
       <a class='nav-item' href='#start'>Start</a>
       <a class='nav-item' href='#speakers'>Speakers</a>
@@ -26,70 +36,100 @@
         <i class='fa fa-twitter'></i>
       </a>
     </nav>
-    <h2 title='Why'>Why</h2>
-    <p>
-      A conference like RubyConf Argentina is all about new ideas, getting a renewed perspective on old topics, encouraging discussion and getting to know new people. Having a good roster of already established, well-known speakers is not enough to guarantee that.<span>We want you to jump on stage</span>and show everyone what you have - maybe you created a new library, or have an idea worth exploring, or want to share some of your experiences.
-    </p>
-    <p>
-      In fact, we belive so much that new faces are to be on the spotlight of a conference, that we go to great lenghts in making selected speakers comfortable so they can rock the stage:<span>we will take care of accomodation expenses, transfers from the airport to the hotel</span>, and much more!
-    </p>
-    <article>
-      <img alt='Guidelines - Call for papers' class='cfp' src='http://assets2014-1.baruco.org/assets/guidelines_call_for_papers-0b4bb8c44afd726b4596e5015ad8e765.svg' title='Guidelines - RubyConf Argentina Call for papers'>
-      <h2 title='Guidelines'>Guidelines</h2>
-      <ul>
-        <li>
-          You can submit your proposal via this form no later than
-          <span>August the 1st 2014, 23:59 CEST</span>
-        </li>
-        <li>
-          You will be able to send
-          <span>as much proposals as you want.</span>
-        </li>
-        <li><span>You can modify your proposals any time</span>before August the 1st 2014, 23:59 CEST
-        </li>
-        <li>The main conference's theme is the Ruby programming language. We highly encourage you to choose a topic that is somehow related to it, either directly or tangentially - that being said, we're open to original mind-blowing proposals.</li>
-        <li>The talk duration must be around 30 minutes, plus 10min for Q&A.</li>
-        <li>The video provided is just to show your speaking skills. It doesn't matter if it's from a fancy high-tech conf or from the comfort of your sofa. It doesn't have to be related to your submitted topic - that's what the description is for!</li>
-      </ul>
-    </article>
-    <article>
-      <img alt='Selection process - Call for papers' class='cfp' src='http://assets2014-1.baruco.org/assets/selection_process_call_for_papers-042e90c1948d5db5899591b2b1c6af2d.svg' title='Selection process - RubyConf Argentina Call for papers'>
-      <h2 title='Selection process'>Selection process</h2>
-      <ul>
-        <li>
-          There are<span>4 speaker slots</span>reserved to the call for papers.
-        </li>
-        <li>The selection process will be managed by a closed commitee formed by the RubyConf Argentina organizers.</li>
-        <li>We will follow a 2-step voting process:  Topic triage (being blind about who it is from), and a second phase where we vote based on the video provided. In case of draw, a third voting phase could take place.</li>
-        <li>We won't publish the votes either publicly or privately.</li>
-        <li>The selected list of speaker will be announced publicly via social networks and e-mail, as well as privately to each participant.</li>
-      </ul>
-    </article>
-    <article>
-      <img alt='What you get - Call for papers' class='cfp' src='http://assets2014-3.baruco.org/assets/what_you_get-41e05282cf477c6c7beb4fe8770968a1.svg' title='What you get - RubyConf Argentina Call for papers'>
-      <h2 title='What you get'>What you get</h2>
-      <ul>
-        <li>
-          <strong>Free ticket</strong>
-          to the conference (all goodies included!).
-        </li>
-        <li>
-          3 nights of
-          <strong>paid accommodation</strong>
-          at the
-          <strong>NH Constanza 4 star hotel</strong>
-          (1 minute walk from the venue).
-        </li>
-        <li>Transfer from airport to hotel.</li>
-        <li>Appearance in the conference's leaflet, website, etc.</li>
-        <li>Speakers' dinner.</li>
-        <li>
-          Unfortunately we’re
-          <strong>not able to cover any flight costs</strong>,
-        </li>
-      </ul>
-    </article>
-    <a class='submit' href='/mandale'>Submit proposal</a>
+    <section>
+      <article class='wrapper'>
+        <h2 title='Why'>Why</h2>
+        <p>
+          A conference like RubyConf Argentina is all about new ideas, getting a renewed perspective on old topics, encouraging discussion and getting to know new people. Having a good roster of already established, well-known speakers is not enough to guarantee that.<span>We want you to jump on stage</span>and show everyone what you have - maybe you created a new library, or have an idea worth exploring, or want to share some of your experiences.
+        </p>
+        <p>
+          In fact, we belive so much that new faces are to be on the spotlight of a conference, that we go to great lenghts in making selected speakers comfortable so they can rock the stage:<span>we will take care of accomodation expenses, transfers from the airport to the hotel</span>, and much more!
+        </p>
+        <article>
+          <img alt='Guidelines - Call for papers' class='cfp' src='http://assets2014-1.baruco.org/assets/guidelines_call_for_papers-0b4bb8c44afd726b4596e5015ad8e765.svg' title='Guidelines - RubyConf Argentina Call for papers'>
+          <h2 title='Guidelines'>Guidelines</h2>
+          <ul>
+            <li>
+              You can submit your proposal via this form no later than
+              <span>August the 1st 2014, 23:59 CEST</span>
+            </li>
+            <li>
+              You will be able to send
+              <span>as much proposals as you want.</span>
+            </li>
+            <li><span>You can modify your proposals any time</span>before August the 1st 2014, 23:59 CEST
+            </li>
+            <li>The main conference's theme is the Ruby programming language. We highly encourage you to choose a topic that is somehow related to it, either directly or tangentially - that being said, we're open to original mind-blowing proposals.</li>
+            <li>The talk duration must be around 30 minutes, plus 10min for Q&A.</li>
+            <li>The video provided is just to show your speaking skills. It doesn't matter if it's from a fancy high-tech conf or from the comfort of your sofa. It doesn't have to be related to your submitted topic - that's what the description is for!</li>
+          </ul>
+        </article>
+        <article>
+          <img alt='Selection process - Call for papers' class='cfp' src='http://assets2014-1.baruco.org/assets/selection_process_call_for_papers-042e90c1948d5db5899591b2b1c6af2d.svg' title='Selection process - RubyConf Argentina Call for papers'>
+          <h2 title='Selection process'>Selection process</h2>
+          <ul>
+            <li>
+              There are<span>4 speaker slots</span>reserved to the call for papers.
+            </li>
+            <li>The selection process will be managed by a closed commitee formed by the RubyConf Argentina organizers.</li>
+            <li>We will follow a 2-step voting process:  Topic triage (being blind about who it is from), and a second phase where we vote based on the video provided. In case of draw, a third voting phase could take place.</li>
+            <li>We won't publish the votes either publicly or privately.</li>
+            <li>The selected list of speaker will be announced publicly via social networks and e-mail, as well as privately to each participant.</li>
+          </ul>
+        </article>
+        <article>
+          <img alt='What you get - Call for papers' class='cfp' src='http://assets2014-3.baruco.org/assets/what_you_get-41e05282cf477c6c7beb4fe8770968a1.svg' title='What you get - RubyConf Argentina Call for papers'>
+          <h2 title='What you get'>What you get</h2>
+          <ul>
+            <li>
+              <strong>Free ticket</strong>
+              to the conference (all goodies included!).
+            </li>
+            <li>
+              3 nights of
+              <strong>paid accommodation</strong>
+              at the
+              <strong>NH Constanza 4 star hotel</strong>
+              (1 minute walk from the venue).
+            </li>
+            <li>Transfer from airport to hotel.</li>
+            <li>Appearance in the conference's leaflet, website, etc.</li>
+            <li>Speakers' dinner.</li>
+            <li>
+              Unfortunately we’re
+              <strong>not able to cover any flight costs</strong>,
+            </li>
+          </ul>
+        </article>
+        <a class='submit' href='/mandale'>Submit proposal</a>
+      </article>
+    </section>
+    <footer>
+      <div class='wrapper'>
+        <h4>RubyConf Argentina es organizada por RAAC, una asociación sin fines de lucro dedicada a promover el crecimiento de Ruby y tecnologías relacionadas.</h4>
+        <h5>
+          Eventos anteriores:
+          <a href='http://2011.rubyconfargentina.org'>2011,</a>
+          <a href='http://2012.rubyconfargentina.org'>2012,</a>
+          <a href='http://2013.rubyconfargentina.org'>2013.</a>
+        </h5>
+        <p>La organización del evento se reserva el derecho de admisión y permanencia conforme con lo establecido en la legislación vigente.</p>
+        <a href='https://www.facebook.com/rubyconfar' target='_blank'>
+          <i class='fa fa-facebook-square'></i>
+        </a>
+        <a href='https://twitter.com/RubyConfAR' target='_blank'>
+          <i class='fa fa-twitter-square'></i>
+        </a>
+        <a href='http://vimeo.com/rubyargentina' target='_blank'>
+          <i class='fa fa-vimeo-square'></i>
+        </a>
+        <div class='fb-like' data-action='like' data-href='https://facebook.com/rubyconfar' data-layout='standard' data-share='true' data-show-faces='true'></div>
+        <a class='twitter-follow-button' data-lang='en' data-show-count='false' href='https://twitter.com/rubyconfar'>Follow @rubyconfar</a>
+      </div>
+    </footer>
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

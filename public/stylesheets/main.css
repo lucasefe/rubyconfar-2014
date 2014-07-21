@@ -1572,6 +1572,10 @@ section#sponsors {
 section#cfp {
   background: cyan; }
 
+body > footer {
+  background: #684858;
+  padding: 50px 0; }
+
 body {
   color: #ffd88f;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
