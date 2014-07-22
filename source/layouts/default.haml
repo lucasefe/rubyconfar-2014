@@ -34,7 +34,10 @@
 
     = yield
 
+
+       
     %footer
+      
       .wrapper
         .social-links
           %a.facebook{:href => "https://www.facebook.com/rubyconfar", :target => "_blank"}
@@ -44,7 +47,9 @@
           %a.vimeo{:href => "http://vimeo.com/rubyargentina", :target => "_blank"}
             %i.fa.fa-vimeo-square
 
-        .sidebar
+        .fb-like-box{"data-colorscheme" => "dark", "data-header" => "false", "data-href" => "https://www.facebook.com/rubyconfar", "data-show-border" => "false", "data-show-faces" => "true", "data-stream" => "false"}
+
+        .anteriores
           %h6 Eventos anteriores:
           %ol
             %li
@@ -71,13 +76,15 @@
         
         %p La organización del evento se reserva el derecho de admisión y permanencia conforme con lo establecido en la legislación vigente.
 
+        %a.twitter-follow-button{"data-lang" => "en", "data-show-count" => "false", href: "https://twitter.com/rubyconfar", "data-size" => "large"} Follow @rubyconfar
+
+        
+        
+
         
 
 
-        .fb-like{"data-action" => "like", "data-href" => "https://facebook.com/rubyconfar", "data-layout" => "standard", "data-share" => "true", "data-show-faces" => "true"}
-
-
-        %a.twitter-follow-button{"data-lang" => "en", "data-show-count" => "false", href: "https://twitter.com/rubyconfar"} Follow @rubyconfar
+        
 
     :javascript
       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

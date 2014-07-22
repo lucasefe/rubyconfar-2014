@@ -1601,18 +1601,17 @@ body > footer {
         color: #86c8ea; }
       body > footer .social-links a.vimeo:hover {
         color: #80cce7; }
-  body > footer .sidebar {
-    float: left;
-    margin-right: 5%; }
-    body > footer .sidebar h6 {
+  body > footer .anteriores {
+    margin-bottom: 20px; }
+    body > footer .anteriores h6 {
       font-size: 14px;
       font-weight: bold;
       margin-bottom: 6px; }
-    body > footer .sidebar ol li a {
+    body > footer .anteriores ol li a {
       color: rgba(255, 216, 143, 0.85); }
-      body > footer .sidebar ol li a strong {
+      body > footer .anteriores ol li a strong {
         color: #ffd88f; }
-      body > footer .sidebar ol li a i {
+      body > footer .anteriores ol li a i {
         color: #bc2e2a;
         font-size: 14px;
         padding: 5px 3px; }
@@ -1620,7 +1619,13 @@ body > footer {
     font-size: 14px;
     margin-bottom: 20px; }
   body > footer p {
+    margin-bottom: 25px; }
+  body > footer iframe {
+    display: block;
     margin-bottom: 20px; }
+  body > footer .fb-like-box {
+    float: left;
+    margin-right: 5%; }
 
 body {
   color: #ffd88f;
