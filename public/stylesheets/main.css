@@ -120,22 +120,26 @@ a, img a {
 @-moz-keyframes spin {
   0% {
     -moz-transform: rotate(0deg); }
+
   100% {
     -moz-transform: rotate(359deg); } }
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg); }
+
   100% {
     -webkit-transform: rotate(359deg); } }
 @-o-keyframes spin {
   0% {
     -o-transform: rotate(0deg); }
+
   100% {
     -o-transform: rotate(359deg); } }
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
+
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
@@ -1682,9 +1686,47 @@ body {
     max-width: 1100px;
     padding-left: 70px;
     padding-right: 70px; }
+  body .btn {
+    transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    background: #ffd88f;
+    border-radius: 3px;
+    color: #684858;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 6px;
+    padding: 6px 20px;
+    text-transform: uppercase; }
+    body .btn i {
+      font-size: 18px;
+      margin: 0 0 1px 6px;
+      vertical-align: bottom; }
+    body .btn:hover {
+      opacity: 0.85; }
   body#home section article.wrapper {
-    padding: 50px 0; }
+    padding-bottom: 50px;
+    padding-top: 50px; }
     body#home section article.wrapper h2 {
+      float: left;
       font-family: "Ubuntu";
-      font-size: 40px;
-      font-weight: normal; }
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 10px;
+      width: 20%; }
+    body#home section article.wrapper .content {
+      margin-left: 20%;
+      padding-top: 12px; }
+      body#home section article.wrapper .content p {
+        line-height: 2; }
+    @media screen and (max-width: 1000px) {
+      body#home section article.wrapper {
+        text-align: center; }
+        body#home section article.wrapper h2 {
+          float: none;
+          width: auto; }
+        body#home section article.wrapper .content {
+          margin: 0; }
+        body#home section article.wrapper .btn {
+          display: block; } }

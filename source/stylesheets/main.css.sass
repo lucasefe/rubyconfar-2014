@@ -67,17 +67,56 @@ body
     max-width: 1100px
     padding-left: 70px
     padding-right: 70px
+
+
+  .btn
+    @include transition(all 0.25s)
+    background: $cream
+    border-radius: 3px
+    color: $violet
+    font-size: 12px
+    font-weight: 700
+    margin-right: 6px
+    padding: 6px 20px
+    text-transform: uppercase
+    i
+      font-size: 18px
+      margin: 0 0 1px 6px
+      vertical-align: bottom
+    &:hover
+      opacity: 0.85
   
   &#home
     section
       article.wrapper
-        padding: 50px 0
+        padding-bottom: 50px
+        padding-top: 50px
 
         h2
+          float: left
           font-family: 'Ubuntu'
-          font-size: 40px
-          font-weight: normal
+          font-size: 36px
+          font-weight: 300
+          margin-bottom: 10px
+          width: 20%
 
+        .content
+          margin-left: 20%
+          padding-top: 12px
+
+          p
+            line-height: 2
+
+        @media screen and (max-width: 1000px)
+          text-align: center
+          h2
+            float: none
+            width: auto
+          .content
+            margin: 0
+
+          .btn
+            display: block
 
 
 
