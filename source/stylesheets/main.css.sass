@@ -39,8 +39,7 @@ body
       display: block
       margin-bottom: 5px
       text-decoration: none
-      &:hover
-        opacity: 0.7
+      
       &.nav-item
         background: $cream
         border-radius: 100%
@@ -49,8 +48,17 @@ body
         margin: 0 0 16px 10px
         text-indent: -30000px
         width: 8px
+        &:hover
+          opacity: 0.7
         &.active
           background: $teal
+
+      &.facebook
+        &:hover
+          color: #6f85ac
+      &.twitter
+        &:hover
+          color: #86c8ea
 
 
   .wrapper

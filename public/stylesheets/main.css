@@ -1651,8 +1651,6 @@ body {
       display: block;
       margin-bottom: 5px;
       text-decoration: none; }
-      body nav a:hover {
-        opacity: 0.7; }
       body nav a.nav-item {
         background: #ffd88f;
         border-radius: 100%;
@@ -1661,8 +1659,14 @@ body {
         margin: 0 0 16px 10px;
         text-indent: -30000px;
         width: 8px; }
+        body nav a.nav-item:hover {
+          opacity: 0.7; }
         body nav a.nav-item.active {
           background: #35a785; }
+      body nav a.facebook:hover {
+        color: #6f85ac; }
+      body nav a.twitter:hover {
+        color: #86c8ea; }
   body .wrapper {
     margin-left: auto;
     margin-right: auto;
