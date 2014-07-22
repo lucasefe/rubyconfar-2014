@@ -1,8 +1,8 @@
 !!!
 %html{:lang => "es"}
   %head
-    %title
-      = "#{yield(:title)} RubyConf Argentina 2014"
+
+    %title #{yield(:title)} RubyConf Argentina 2014
     %meta{:charset => "UTF-8"}
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
     %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", :name => "viewport"}
@@ -24,10 +24,9 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     %nav
-      %a.nav-item{:href => "#start"} Start
-      %a.nav-item{:href => "#speakers"} Speakers
-      %a.nav-item{:href => "#sponsors"} Sponsors      
-      / %a.nav-item{:href => "#cfp"} Call for papers
+      %a.nav-item{:href => "index.html#start"} Start
+      %a.nav-item{:href => "index.html#speakers"} Speakers
+      %a.nav-item{:href => "index.html#sponsors"} Sponsors      
       %a.facebook{:href => "https://www.facebook.com/rubyconfar", :target => "_blank"}
         %i.fa.fa-facebook
       %a.twitter{:href => "https://twitter.com/RubyConfAR", :target => "_blank"}
