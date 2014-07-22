@@ -1,4 +1,5 @@
 /* CSS RESET. standardizes cross-browser rendering on common elements, neutralizing browsers' built-in stylesheets. */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, iframe {
   margin: 0;
   padding: 0; }
@@ -1544,8 +1545,9 @@ section#start {
       max-width: 100%;
       height: auto; }
   section#start h2 {
-    font-weight: 600;
+    font-family: "Ubuntu";
     font-size: 1.25em;
+    letter-spacing: 0.5px;
     text-transform: uppercase; }
   @media screen and (max-width: 500px) {
     section#start hgroup {
@@ -1564,13 +1566,13 @@ section#start {
       font-size: 1em; } }
 
 section#speakers {
-  background: black; }
+  background: #684858; }
 
 section#sponsors {
   background: #35a785; }
 
 section#cfp {
-  background: cyan; }
+  background: #684858; }
 
 body > footer {
   background: #333333;
@@ -1684,5 +1686,9 @@ body {
     max-width: 1100px;
     padding-left: 70px;
     padding-right: 70px; }
-  body section article {
-    padding-top: 50px; }
+  body#home section article.wrapper {
+    padding: 50px 0; }
+    body#home section article.wrapper h2 {
+      font-family: "Ubuntu";
+      font-size: 40px;
+      font-weight: normal; }

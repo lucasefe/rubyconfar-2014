@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-  $("section").height($(window).height());
+  $("section#start").height($(window).height());
 
   var arr = ['horse', 'erlich', 'woz', 'moss'];
   var idx = Math.floor(Math.random() * arr.length);
@@ -20,5 +20,5 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-	$("section").height($(window).height());
+	$("section#start").height($(window).height());
 });
