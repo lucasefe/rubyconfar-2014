@@ -1,4 +1,62 @@
 body
   > footer
-    background: $violet
+    background: $gray
+    color: #c4c4c4
+    font-size: 12px
     padding: 50px 0
+
+    strong
+      font-weight: 600
+
+    .social-links
+      float: right
+      margin-left: 5%
+      a
+        @include transition(all 0.3s)
+        border-bottom: 1px solid lighten($gray, 20%)
+        color: #c4c4c4
+        display: block
+        font-size: 24px
+        margin-bottom: 4px
+        padding-bottom: 4px
+        &:last-child
+          border-bottom: 0 none
+        &.facebook
+          &:hover
+            color: #6f85ac
+        &.twitter
+          &:hover
+            color: #86c8ea
+        &.vimeo
+          &:hover
+            color: #80cce7
+
+   
+    .sidebar
+      float: left
+      margin-right: 5%
+
+      h6
+        font-size: 14px
+        font-weight: bold
+        margin-bottom: 6px
+
+      ol
+        li
+          a
+            color: rgba($cream, 0.85)
+            strong
+              color: $cream
+            i
+              color: $red
+              font-size: 14px
+              padding: 5px 3px
+
+
+    h5
+      font-size: 14px
+      margin-bottom: 20px
+    h6
+      
+    p
+      margin-bottom: 20px

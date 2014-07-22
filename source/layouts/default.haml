@@ -36,20 +36,42 @@
 
     %footer
       .wrapper
-        %h4 RubyConf Argentina es organizada por RAAC, una asociación sin fines de lucro dedicada a promover el crecimiento de Ruby y tecnologías relacionadas.
+        .social-links
+          %a.facebook{:href => "https://www.facebook.com/rubyconfar", :target => "_blank"}
+            %i.fa.fa-facebook-square
+          %a.twitter{:href => "https://twitter.com/RubyConfAR", :target => "_blank"}
+            %i.fa.fa-twitter-square
+          %a.vimeo{:href => "http://vimeo.com/rubyargentina", :target => "_blank"}
+            %i.fa.fa-vimeo-square
+
+        .sidebar
+          %h6 Eventos anteriores:
+          %ol
+            %li
+              %a{:href=>"http://2011.rubyconfargentina.org"}
+                %i.fa.fa-check
+                RubyConf Argentina 
+                %strong 2011 
+            %li
+              %a{:href=>"http://2012.rubyconfargentina.org"}
+                %i.fa.fa-check
+                RubyConf Argentina 
+                %strong 2012
+            %li
+              %a{:href=>"http://2013.rubyconfargentina.org"}
+                %i.fa.fa-check
+                RubyConf Argentina 
+                %strong 2013
+            
+            
+        
         %h5
-          Eventos anteriores:
-          %a{:href=>"http://2011.rubyconfargentina.org"} 2011, 
-          %a{:href=>"http://2012.rubyconfargentina.org"} 2012, 
-          %a{:href=>"http://2013.rubyconfargentina.org"} 2013.
+          %strong RubyConf Argentina 
+          es organizada por RAAC, una asociación sin fines de lucro dedicada a promover el crecimiento de Ruby y tecnologías relacionadas.
+        
         %p La organización del evento se reserva el derecho de admisión y permanencia conforme con lo establecido en la legislación vigente.
 
-        %a{:href => "https://www.facebook.com/rubyconfar", :target => "_blank"}
-          %i.fa.fa-facebook-square
-        %a{:href => "https://twitter.com/RubyConfAR", :target => "_blank"}
-          %i.fa.fa-twitter-square
-        %a{:href => "http://vimeo.com/rubyargentina", :target => "_blank"}
-          %i.fa.fa-vimeo-square
+        
 
 
         .fb-like{"data-action" => "like", "data-href" => "https://facebook.com/rubyconfar", "data-layout" => "standard", "data-share" => "true", "data-show-faces" => "true"}
