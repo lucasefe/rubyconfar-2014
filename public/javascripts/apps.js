@@ -49,7 +49,7 @@ $(window).resize(function() {
 $(window).scroll(function(){
   var windowTop = $(window).scrollTop(); // returns number  
 
-  if (windowTop > 112) {
+  if (windowTop > 120) {
     $('header .fist-logo').addClass('fixed');
   }
   else {

@@ -1,7 +1,6 @@
 body#cfp
   background: $gray_light
-  // @media screen and (min-width: 500px)
-  //   border-left: 64px solid $red_alt
+
 
   header
     background: $teal
@@ -42,15 +41,16 @@ body#cfp
         top: 19px
         z-index: 2
         &.fixed
+          margin-top: -8px
           position: fixed
           
 
 
   #top
     background: $red_alt
-    background: rgba($red_alt, 0.9)
-    border-top: 8px solid $teal
-    box-shadow: 0 2px 2px rgba(black, 0.2)
+    // background: rgba($red_alt, 0.9)
+    // border-top: 8px solid $teal
+    // box-shadow: 0 2px 2px rgba(black, 0.2)
     height: 70px
     position: fixed
     top: 0
@@ -68,10 +68,18 @@ body#cfp
 
   section
     color: $gray
+    padding-bottom: 50px
+    padding-top: 20px
+    @media screen and (min-width: 500px)
+      border-left: 64px solid $teal
 
     h1
       color: $red_alt
       margin: 20px 0
+
+    h2
+      color: $red_alt
+      font-size: 20px
 
 
 

@@ -1811,12 +1811,10 @@ body#cfp {
         top: 19px;
         z-index: 2; }
         body#cfp header .podio .fist-logo.fixed {
+          margin-top: -8px;
           position: fixed; }
   body#cfp #top {
     background: #e1483f;
-    background: rgba(225, 72, 63, 0.9);
-    border-top: 8px solid #35a785;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     height: 70px;
     position: fixed;
     top: 0;
@@ -1831,10 +1829,18 @@ body#cfp {
   body#cfp h1 {
     font-size: 30px; }
   body#cfp section {
-    color: #333333; }
+    color: #333333;
+    padding-bottom: 50px;
+    padding-top: 20px; }
+    @media screen and (min-width: 500px) {
+      body#cfp section {
+        border-left: 64px solid #35a785; } }
     body#cfp section h1 {
       color: #e1483f;
       margin: 20px 0; }
+    body#cfp section h2 {
+      color: #e1483f;
+      font-size: 20px; }
   @media screen and (min-width: 500px) {
     body#cfp nav {
       margin-top: 70px; } }
