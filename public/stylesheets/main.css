@@ -1526,6 +1526,7 @@ a, img a {
 
 #mobileMenuTrigger {
   display: none;
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   border: 1px solid #ffd88f;
   font-size: 20px;
@@ -1601,10 +1602,16 @@ nav {
         opacity: 1; }
     nav a.active .icon {
       background: #35a785; }
-    nav a.facebook:hover {
-      color: #6f85ac; }
-    nav a.twitter:hover {
-      color: #86c8ea; }
+    nav a.active span {
+      color: #35a785; }
+    nav a.facebook {
+      padding: 0; }
+      nav a.facebook:hover {
+        color: #6f85ac; }
+    nav a.twitter {
+      padding: 0; }
+      nav a.twitter:hover {
+        color: #86c8ea; }
 
 @media screen and (max-width: 500px) {
   nav {

@@ -1,5 +1,6 @@
 #mobileMenuTrigger
   display: none // hides the thing
+  background: rgba(black, 0.2)
   border-radius: 3px
   border: 1px solid $cream
   font-size: 20px
@@ -74,11 +75,15 @@ nav
     &.active
       .icon
         background: $teal
+      span
+        color: $teal
 
     &.facebook
+      padding: 0
       &:hover
         color: #6f85ac
     &.twitter
+      padding: 0
       &:hover
         color: #86c8ea
 

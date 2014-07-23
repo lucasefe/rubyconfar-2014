@@ -14,18 +14,21 @@ $(document).ready(function() {
     var $anchor = $('#' + this.hash.substring(1));
     $('html,body').animate({ 
         scrollTop: $anchor.offset().top
-    }, 999, 'easeInOutBack');
+    }, 799, 'easeOutBack');
+
+    if ( $('#mobileMenuTrigger').hasClass('active') ) {
+      $('#mobileMenuTrigger').click();
+    }
   });
 
 
   // Mobile Navigation Trigger
-    $('#mobileMenuTrigger').click(function(){
-      $(this).next().slideToggle();
-      $('section').toggleClass('fade');
-      $(this).toggleClass('active');
-      return false;
-    });
-
+  $('#mobileMenuTrigger').click(function(){
+    $(this).next().slideToggle();
+    $('section').toggleClass('fade');
+    $(this).toggleClass('active');
+    return false;
+  });
   
 
 });
