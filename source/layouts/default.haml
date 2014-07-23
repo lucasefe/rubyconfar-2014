@@ -27,25 +27,26 @@
     #mobileMenuTrigger
       %i.fa.fa-bars
 
-    %nav      
-      %a{:href => "index.html#start"} 
+    %nav
+      %a.fist-logo{:href => "index.html#start"}
+      %a.circle{:href => "index.html#start"}
         .icon
         %span Start
-      %a{:href => "index.html#registration"} 
+      %a.circle{:href => "index.html#registration"} 
         .icon
         %span Registration
-      %a{:href => "index.html#speakers"}
+      %a.circle{:href => "index.html#speakers"}
         .icon
         %span Speakers
-      %a{:href => "index.html#sponsors"}
+      %a.circle{:href => "index.html#sponsors"}
         .icon
         %span Sponsors      
-      %a{:href => "index.html#venue"}
+      %a.circle{:href => "index.html#venue"}
         .icon
         %span Venue
-      %a.social.facebook{:href => "https://www.facebook.com/rubyconfar", :target => "_blank"}
+      %a.facebook{:href => "https://www.facebook.com/rubyconfar", :target => "_blank"}
         %i.fa.fa-facebook
-      %a.social.twitter{:href => "https://twitter.com/RubyConfAR", :target => "_blank"}
+      %a.twitter{:href => "https://twitter.com/RubyConfAR", :target => "_blank"}
         %i.fa.fa-twitter
 
     = yield

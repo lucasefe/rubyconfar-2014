@@ -25,13 +25,18 @@ nav
   width: 26px
   z-index: 10
 
+
+  .fist-logo
+    display: none
+    margin: 15px 0 0
+
   a
     @include transition
     color: $cream
-    display: block
-    padding: 5px 0
-    text-decoration: none
-    position: relative
+    &:not(.fist-logo)
+      display: block
+      position: relative
+      padding: 5px 0
     
     .icon
       background: $cream
@@ -60,6 +65,7 @@ nav
           position: absolute
           top: 4px
     &:hover
+      text-decoration: none
       .icon
         opacity: 0.7
       span
@@ -79,17 +85,19 @@ nav
 @media screen and (max-width: 500px)
   nav
     background: rgba(black, 0.8)
-    border-bottom: 2px solid rgba($teal, 0.5)
-    border-top: 2px solid rgba($teal, 0.5)
+    border-bottom: 2px solid rgba($red, 0.5)
     display: none
     font-size: 24px
     left: auto
     top: 0
     width: 100%
 
+    .fist-logo
+      @include inline-block
+
     a
       color: $cream
-      border-bottom: 1px solid rgba($teal, 0.35)        
+      border-bottom: 1px solid rgba($red, 0.35)        
       padding: 12px
       margin-bottom: 0
       .icon

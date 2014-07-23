@@ -7,7 +7,7 @@ $(document).ready(function() {
   $('section#start').addClass(arr[idx]);
 
 
-  $("#home nav a:not(.social)").click(function() {
+  $("#home nav a.circle").click(function() {
     $(this).siblings().removeClass('active');
     $(this).toggleClass('active');
     event.preventDefault();
@@ -21,7 +21,7 @@ $(document).ready(function() {
   // Mobile Navigation Trigger
     $('#mobileMenuTrigger').click(function(){
       $(this).next().slideToggle();
-      // $('section').toggleClass('fade');
+      $('section').toggleClass('fade');
       $(this).toggleClass('active');
       return false;
     });
