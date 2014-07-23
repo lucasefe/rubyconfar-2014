@@ -17,6 +17,17 @@ $(document).ready(function() {
     }, 999, 'easeInOutBack');
   });
 
+
+  // Mobile Navigation Trigger
+    $('#mobileMenuTrigger').click(function(){
+      $(this).next().slideToggle();
+      // $('section').toggleClass('fade');
+      $(this).toggleClass('active');
+      return false;
+    });
+
+  
+
 });
 
 $(window).resize(function() {

@@ -23,10 +23,20 @@
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    %nav
-      %a.nav-item{:href => "index.html#start"} Start
-      %a.nav-item{:href => "index.html#speakers"} Speakers
-      %a.nav-item{:href => "index.html#sponsors"} Sponsors      
+    
+    #mobileMenuTrigger
+      %i.fa.fa-bars
+
+    %nav      
+      %a{:href => "index.html#start"} 
+        .icon
+        %span Start
+      %a{:href => "index.html#speakers"}
+        .icon
+        %span Speakers
+      %a{:href => "index.html#sponsors"}
+        .icon
+        %span Sponsors      
       %a.facebook{:href => "https://www.facebook.com/rubyconfar", :target => "_blank"}
         %i.fa.fa-facebook
       %a.twitter{:href => "https://twitter.com/RubyConfAR", :target => "_blank"}
