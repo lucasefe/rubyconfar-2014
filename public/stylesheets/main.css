@@ -1524,54 +1524,6 @@ a, img a {
 .fa-bomb:before {
   content: "\f1e2"; }
 
-section#start {
-  background: url(../images/main.png) no-repeat top center, url(../images/bkg.png) repeat-x top center;
-  background-size: auto 100%; }
-  section#start.horse {
-    background: url(../images/horse.png) no-repeat top center, url(../images/bkg.png) repeat-x top center;
-    background-size: auto 100%; }
-  section#start.woz {
-    background: url(../images/woz.png) no-repeat top center, url(../images/bkg.png) repeat-x top center;
-    background-size: auto 100%; }
-  section#start.moss {
-    background: url(../images/moss.png) no-repeat top center, url(../images/bkg.png) repeat-x top center;
-    background-size: auto 100%; }
-  section#start hgroup {
-    bottom: 200px;
-    left: 40px;
-    max-width: 30%;
-    position: absolute;
-    text-align: center; }
-    section#start hgroup img {
-      max-width: 100%;
-      height: auto; }
-  section#start h2 {
-    font-family: "Ubuntu";
-    font-size: 1.25em;
-    letter-spacing: 0.5px;
-    text-transform: uppercase; }
-  @media screen and (max-width: 500px) {
-    section#start hgroup {
-      background-color: transparent;
-      background-image: -moz-linear-gradient(top, transparent, black);
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(1, black));
-      background-image: linear-gradient(top, transparent, black);
-      bottom: 0;
-      left: 0;
-      max-width: 100%;
-      padding-bottom: 50px;
-      width: 100%; }
-      section#start hgroup img {
-        max-width: 70%; }
-    section#start h2 {
-      font-size: 1em; } }
-
-section#speakers {
-  background: #684858; }
-
-section#sponsors {
-  background: #35a785; }
-
 #mobileMenuTrigger {
   display: none;
   border-radius: 3px;
@@ -1688,8 +1640,6 @@ body > footer {
   color: #c4c4c4;
   font-size: 12px;
   padding: 50px 0; }
-  body > footer strong {
-    font-weight: 600; }
   body > footer .social-links {
     float: right;
     margin-left: 5%; }
@@ -1749,6 +1699,62 @@ body > footer {
     body > footer a#sz:hover {
       color: #c4c4c4; }
 
+section#start {
+  background: url(../images/main.png) no-repeat top center, url(../images/bkg.png) repeat-x top center;
+  background-size: auto 100%; }
+  section#start.horse {
+    background: url(../images/horse.png) no-repeat top center, url(../images/bkg.png) repeat-x top center;
+    background-size: auto 100%; }
+  section#start.woz {
+    background: url(../images/woz.png) no-repeat top center, url(../images/bkg.png) repeat-x top center;
+    background-size: auto 100%; }
+  section#start.moss {
+    background: url(../images/moss.png) no-repeat top center, url(../images/bkg.png) repeat-x top center;
+    background-size: auto 100%; }
+  section#start hgroup {
+    bottom: 200px;
+    left: 40px;
+    max-width: 30%;
+    position: absolute;
+    text-align: center; }
+    section#start hgroup img {
+      max-width: 100%;
+      height: auto; }
+  section#start h2 {
+    font-family: "Ubuntu";
+    font-size: 1.25em;
+    letter-spacing: 0.5px;
+    text-transform: uppercase; }
+  @media screen and (max-width: 500px) {
+    section#start hgroup {
+      background-color: transparent;
+      background-image: -moz-linear-gradient(top, transparent, black);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(1, black));
+      background-image: linear-gradient(top, transparent, black);
+      bottom: 0;
+      left: 0;
+      max-width: 100%;
+      padding-bottom: 50px;
+      width: 100%; }
+      section#start hgroup img {
+        max-width: 70%; }
+    section#start h2 {
+      font-size: 1em; } }
+
+section#registration {
+  background: #684858; }
+
+section#speakers {
+  background: #35a785; }
+
+section#sponsors {
+  background: #4b5563; }
+
+section#venue {
+  background: #684858; }
+  section#venue address {
+    margin-bottom: 25px; }
+
 body {
   color: #ffd88f;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -1779,7 +1785,8 @@ body {
     body .wrapper h4 {
       font-size: 16px; }
     body .wrapper h3 {
-      font-size: 17px; }
+      font-size: 17px;
+      margin-bottom: 15px; }
     body .wrapper h3 {
       font-size: 18px; }
     body .wrapper ul {
