@@ -1616,7 +1616,7 @@ nav {
       display: none; }
     nav a:hover {
       opacity: 0.7; }
-    nav a.active {
+    nav a.active .icon {
       background: #35a785; }
     nav a.facebook:hover {
       color: #6f85ac; }

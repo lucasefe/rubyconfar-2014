@@ -7,7 +7,7 @@ $(document).ready(function() {
   $('section#start').addClass(arr[idx]);
 
 
-  $("#home nav a.nav-item").click(function() {
+  $("#home nav a:not(.social)").click(function() {
     $(this).siblings().removeClass('active');
     $(this).toggleClass('active');
     event.preventDefault();
