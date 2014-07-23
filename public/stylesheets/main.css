@@ -1749,16 +1749,17 @@ body > footer {
     body > footer a#sz:hover {
       color: #c4c4c4; }
 
-section#cfp {
-  background: #684858; }
-
 body {
   color: #ffd88f;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background-color: #bc2e2a; }
+  background-color: #bc2e2a;
+  font-size: 14px;
+  line-height: 1.5; }
   body a {
     color: #ffd88f;
     text-decoration: none; }
+    body a:hover {
+      text-decoration: underline; }
   body .wrapper {
     margin-left: auto;
     margin-right: auto;
@@ -1769,17 +1770,44 @@ body {
       body .wrapper {
         padding-left: 30px;
         padding-right: 30px; } }
+    body .wrapper p, body .wrapper ul, body .wrapper h6, body .wrapper h5, body .wrapper h4, body .wrapper h3, body .wrapper h2 {
+      margin-bottom: 20px; }
+    body .wrapper h6 {
+      font-size: 15px; }
+    body .wrapper h5 {
+      font-size: 15px; }
+    body .wrapper h4 {
+      font-size: 16px; }
+    body .wrapper h3 {
+      font-size: 17px; }
+    body .wrapper h3 {
+      font-size: 18px; }
+    body .wrapper ul {
+      list-style: disc inside;
+      padding: 0 20px 20px; }
+      body .wrapper ul li {
+        margin-bottom: 5px; }
+        body .wrapper ul li:last-child {
+          margin-bottom: 0; }
+    body .wrapper strong {
+      font-weight: 600; }
   body .btn {
     transition: all 0.25s;
     -moz-transition: all 0.25s;
     -webkit-transition: all 0.25s;
     -o-transition: all 0.25s;
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
     background: #ffd88f;
     border-radius: 3px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
     color: #684858;
     font-size: 12px;
     font-weight: 700;
-    margin-right: 6px;
+    margin: 0 6px 6px 0;
     padding: 6px 20px;
     text-transform: uppercase; }
     body .btn i {
@@ -1787,23 +1815,25 @@ body {
       margin: 0 0 1px 6px;
       vertical-align: bottom; }
     body .btn:hover {
-      opacity: 0.85; }
+      opacity: 0.85;
+      text-decoration: none; }
+    body .btn.btn-alt {
+      background: #35a785;
+      color: #ffd88f; }
   body#home section article.wrapper {
     padding-bottom: 50px;
     padding-top: 50px; }
     body#home section article.wrapper h2 {
       float: left;
       font-family: "Ubuntu";
-      font-size: 36px;
+      font-size: 30px;
       font-weight: 300;
       margin-bottom: 10px;
-      width: 20%; }
+      width: 25%; }
     body#home section article.wrapper .content {
-      margin-left: 20%;
-      padding-top: 12px; }
-      body#home section article.wrapper .content p {
-        line-height: 2; }
-    @media screen and (max-width: 1000px) {
+      margin-left: 25%;
+      padding-top: 10px; }
+    @media screen and (max-width: 800px) {
       body#home section article.wrapper {
         text-align: center; }
         body#home section article.wrapper h2 {
