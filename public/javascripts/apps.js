@@ -32,4 +32,11 @@ $(document).ready(function() {
 
 $(window).resize(function() {
 	$("section#start").height($(window).height());
+
+  // Hack for when closing Mobile Nav on Desktop and then enlarging window.
+  var windowWidth = $(window).width();
+  if (windowWidth > 500) {
+    $('nav').attr('style', ''); // removes display: none
+  }
+
 });
