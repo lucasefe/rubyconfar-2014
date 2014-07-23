@@ -1,4 +1,5 @@
 - content_for(:body_id) {"home"}
+- content_for(:lang) {"en"}
 
 %section#start
   %hgroup
@@ -20,7 +21,7 @@
       %ul
         %li Admission to two days of talk sessions
         %li Access to any after-hour parties
-        %li Official Conference Shirt and goodie bug
+        %li Official Conference Shirt and goodie bag
         %li Breakfast, Lunch and Snacks on both days
         %li Access to our fantastic attendees and speakers
 
@@ -29,20 +30,26 @@
     %h2 Speakers
     .content
       %p
-        %a.btn{:href=>"call_for_papers.html"}
+        %a.btn{:href=>"call_for_papers_en.html"}
           Call For Papers
           %i.fa.fa-angle-right
 
-      %p So you think you have a crazy idea that no one would consider presenting in a conference? That no conference committee would accept? Now we are talking. 
-      %p Yes, it's time to speak up! Submit your proposal and get to tall in front of more than 400 rubyists!
-      %p Read the guidelines and submit your proposal! We want you to speak on the next RubyConf Argentina. It's up to you to do it!
+      %p 
+        So you think you have a crazy idea that no one would ever consider presenting in a conference? 
+        That no conference committee would accept? Now we are talking. 
+      %p 
+        Read the 
+        %a{href: "call_for_papers_en.html" } guidelines and submit your proposal 
+        and get to talk in front of more than 400 rubyists! 
+      %p 
+        We want you to speak at the next RubyConf Argentina. It's up to you!
 
 %section#sponsors
   %article.wrapper
     %h2 Sponsors
     .content
       %h3
-        Are you interested in helping us the 4th RubyConf Argentina Conference?
+        Are you interested in helping us organizing the 4th RubyConf Argentina?
       %p 
         Check out the sponsorship brochure to see how your company can be part of one of the biggest conferences in South America. 
 
