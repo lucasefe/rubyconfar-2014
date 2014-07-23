@@ -1755,6 +1755,12 @@ section#venue {
   section#venue address {
     margin-bottom: 25px; }
 
+section#cfp {
+  background: #4b5563; }
+  @media screen and (min-width: 500px) {
+    section#cfp {
+      border-left: 64px solid #bc2e2a; } }
+
 body {
   color: #ffd88f;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
