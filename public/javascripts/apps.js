@@ -43,3 +43,25 @@ $(window).resize(function() {
   }
 
 });
+
+
+
+$(window).scroll(function(){
+  var windowTop = $(window).scrollTop(); // returns number  
+
+  if (windowTop > 112) {
+    $('header .fist-logo').addClass('fixed');
+  }
+  else {
+    $('header .fist-logo').removeClass('fixed');
+  }  
+  // console.log(windowTop);
+
+});
+
+
+
+
+
+
+

@@ -1774,11 +1774,52 @@ section#venue {
   section#venue address {
     margin-bottom: 25px; }
 
-section#cfp {
-  background: #4b5563; }
-  @media screen and (min-width: 500px) {
-    section#cfp {
-      border-left: 64px solid #e1483f; } }
+body#cfp {
+  background: #dadada; }
+  body#cfp header {
+    background: #35a785;
+    border-top: 8px solid #e1483f;
+    height: 272px;
+    position: relative;
+    z-index: 1; }
+    body#cfp header .podio {
+      background: #5f6e8d;
+      bottom: 0;
+      height: 165px;
+      left: 50%;
+      margin-left: -125px;
+      position: absolute;
+      width: 249px; }
+      body#cfp header .podio .shadow {
+        background: url(../images/podio-shadow.png);
+        height: 142px;
+        margin: 3px 0 0 2px;
+        position: absolute;
+        width: 246px;
+        z-index: 3; }
+      body#cfp header .podio .mic {
+        background: url(../images/podio-mic.png);
+        height: 62px;
+        left: 30px;
+        position: absolute;
+        top: -62px;
+        width: 42px; }
+      body#cfp header .podio .fist-logo {
+        left: 50%;
+        margin-left: -58px;
+        position: absolute;
+        top: 19px;
+        z-index: 2; }
+        body#cfp header .podio .fist-logo.fixed {
+          position: fixed; }
+  body#cfp #top {
+    background: #e1483f;
+    border-top: 8px solid #35a785;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0; }
 
 body {
   color: #ffd88f;

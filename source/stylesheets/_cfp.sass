@@ -1,4 +1,65 @@
-section#cfp
-  background: $blue_dark
-  @media screen and (min-width: 500px)
-    border-left: 64px solid $red_alt
+body#cfp
+  background: $gray_light
+  // @media screen and (min-width: 500px)
+  //   border-left: 64px solid $red_alt
+
+
+
+  header
+    background: $teal
+    border-top: 8px solid $red_alt
+    height: 272px
+    position: relative
+    z-index: 1
+
+    .podio
+      background: #5f6e8d
+      bottom: 0
+      height: 165px
+      left: 50%
+      margin-left: -125px
+      position: absolute
+      width: 249px
+
+      .shadow
+        background: url(../images/podio-shadow.png)
+        height: 142px
+        margin: 3px 0 0 2px
+        position: absolute
+        width: 246px
+        z-index: 3
+
+      .mic
+        background: url(../images/podio-mic.png)
+        height: 62px
+        left: 30px
+        position: absolute
+        top: -62px
+        width: 42px
+
+      .fist-logo
+        left: 50%
+        margin-left: -58px
+        position: absolute
+        top: 19px
+        z-index: 2
+        &.fixed
+          position: fixed
+          
+
+
+  #top
+    background: $red_alt
+    border-top: 8px solid $teal
+    height: 70px
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 0
+
+
+
+
+
+
+    
