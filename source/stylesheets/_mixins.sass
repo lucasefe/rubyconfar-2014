@@ -46,3 +46,23 @@ $easeInOutQuad: cubic-bezier(0.455, 0.030, 0.515, 0.955)
   #{$property}: -moz-calc(#{$expression})
   #{$property}: calc(#{$expression})
 
+
+@mixin caret
+  font-family: 'fontAwesome'
+
+@mixin caret-down
+  @include caret
+  content: ""
+
+@mixin caret-up
+  @include caret
+  content: ""
+
+@mixin caret-right
+  @include caret
+  content: ""
+
+@mixin caret-left
+  @include caret
+  content: ""
+

@@ -21,7 +21,7 @@ nav
   left: 17px
   position: fixed
   text-align: center
-  top: 23px
+  top: 18px
   width: 26px
   z-index: 10
 
@@ -29,21 +29,42 @@ nav
     @include transition
     color: $cream
     display: block
-    margin-bottom: 5px
+    padding: 5px 0
     text-decoration: none
+    position: relative
     
     .icon
       background: $cream
       border-radius: 100%
       height: 8px
-      margin: 0 0 16px 10px
+      margin: 0 0 6px 10px
       width: 8px
 
-    span
-      display: none
-
+    span  
+      @media screen and (min-width: 500px)
+        @include transition(opacity 0.25s)
+        background: rgba(black, 0.7)
+        border-radius: 3px
+        color: $cream        
+        font-size: 12px
+        left: -3000px
+        opacity: 0
+        padding: 3px 9px
+        position: absolute
+        top: -2px
+        &:before
+          @include caret-left
+          color: rgba(black, 0.7)
+          font-size: 15px
+          left: -5px
+          position: absolute
+          top: 4px
     &:hover
-      opacity: 0.7
+      .icon
+        opacity: 0.7
+      span
+        left: 30px
+        opacity: 1
     &.active
       .icon
         background: $teal
