@@ -1782,6 +1782,8 @@ body {
   body a {
     color: #ffd88f;
     text-decoration: none; }
+    body a:hover {
+      text-decoration: none; }
   body .fade {
     opacity: 0.25; }
   body .fist-logo {
@@ -1825,7 +1827,7 @@ body {
       font-weight: 600; }
     body .wrapper a:hover {
       text-decoration: underline; }
-  body .btn {
+  body a.btn {
     transition: all 0.25s;
     -moz-transition: all 0.25s;
     -webkit-transition: all 0.25s;
@@ -1844,14 +1846,14 @@ body {
     margin: 0 6px 6px 0;
     padding: 6px 20px;
     text-transform: uppercase; }
-    body .btn i {
+    body a.btn i {
       font-size: 18px;
       margin: 0 0 1px 6px;
       vertical-align: bottom; }
-    body .btn:hover {
+    body a.btn:hover {
       opacity: 0.85;
       text-decoration: none; }
-    body .btn.btn-alt {
+    body a.btn.btn-alt {
       background: #35a785;
       color: #ffd88f; }
   body#home section article.wrapper {

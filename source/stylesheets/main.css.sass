@@ -28,7 +28,9 @@ body
 
   a
     color: $cream
-    text-decoration: none    
+    text-decoration: none
+    &:hover
+      text-decoration: none
 
   .fade
     opacity: 0.25
@@ -83,7 +85,7 @@ body
 
 
 
-  .btn
+  a.btn
     @include transition(all 0.25s)
     @include inline-block
     background: $cream
