@@ -1,21 +1,207 @@
-<h1>File: source/index_en.html.haml</h1>
-<h3>Error: Illegal nesting: nesting within a tag that already has content is illegal.</h3>
-<pre><code>(haml):57<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/haml-4.1.0.beta.1/lib/haml/parser.rb:443:in `comment'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/haml-4.1.0.beta.1/lib/haml/parser.rb:226:in `process_line'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/haml-4.1.0.beta.1/lib/haml/parser.rb:132:in `block in parse'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/haml-4.1.0.beta.1/lib/haml/parser.rb:118:in `loop'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/haml-4.1.0.beta.1/lib/haml/parser.rb:118:in `parse'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/haml-4.1.0.beta.1/lib/haml/engine.rb:66:in `initialize'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/trekky-0.0.7.rc1/lib/trekky/haml_source.rb:58:in `new'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/trekky-0.0.7.rc1/lib/trekky/haml_source.rb:58:in `render_input'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/trekky-0.0.7.rc1/lib/trekky/haml_source.rb:20:in `render'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/trekky-0.0.7.rc1/lib/trekky.rb:13:in `block in render_to'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/trekky-0.0.7.rc1/lib/trekky.rb:11:in `each'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/trekky-0.0.7.rc1/lib/trekky.rb:11:in `render_to'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/trekky-0.0.7.rc1/bin/trekky:28:in `block in <top (required)>'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/rb-fsevent-0.9.4/lib/rb-fsevent/fsevent.rb:45:in `call'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/rb-fsevent-0.9.4/lib/rb-fsevent/fsevent.rb:45:in `run'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/gems/trekky-0.0.7.rc1/bin/trekky:31:in `<top (required)>'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/bin/trekky:23:in `load'<br>
-/Users/lucasefe/Programming/mine/rubyconfar-2014/.gs/bin/trekky:23:in `<main>'<br></code></pre>
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title> RubyConf Argentina 2014</title>
+    <meta charset='UTF-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+    <link href='images/favicon.ico' rel='shortcut icon'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link charset='utf-8' href='stylesheets/main.css' media='screen' rel='stylesheet' type='text/css'>
+    <script src='javascripts/html5shiv.js'></script>
+    <script src='javascripts/jquery.1.11.min.js'></script>
+    <script src='javascripts/jquery.easing.1.3.js'></script>
+    <script src='javascripts/apps.js'></script>
+  </head>
+  <body id='home'>
+    <div id='fb-root'></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id='mobileMenuTrigger'>
+      <i class='fa fa-bars'></i>
+    </div>
+    <nav>
+      <a class='fist-logo' href='index_en.html#start'></a>
+      <a class='circle' href='index_en.html#start'>
+        <div class='icon'></div>
+        <span>Start</span>
+      </a>
+      <a class='circle' href='index_en.html#registration'>
+        <div class='icon'></div>
+        <span>Registration</span>
+      </a>
+      <a class='circle' href='index_en.html#speakers'>
+        <div class='icon'></div>
+        <span>Speakers</span>
+      </a>
+      <a class='circle' href='index_en.html#sponsors'>
+        <div class='icon'></div>
+        <span>Sponsors</span>
+      </a>
+      <a class='circle' href='index_en.html#venue'>
+        <div class='icon'></div>
+        <span>Venue</span>
+      </a>
+      <a class='facebook' href='https://www.facebook.com/rubyconfar' target='_blank'>
+        <i class='fa fa-facebook'></i>
+      </a>
+      <a class='twitter' href='https://twitter.com/RubyConfAR' target='_blank'>
+        <i class='fa fa-twitter'></i>
+      </a>
+    </nav>
+    <section id='start'>
+      <hgroup>
+        <h1>
+          <img alt='Rubyconf Argentina | Octubre 24 / 25, 2014' height='244' src='images/rubyconf.png' width='462'>
+        </h1>
+        <h2>Ciudad Cultural Konex</h2>
+      </hgroup>
+    </section>
+    <section id='registration'>
+      <article class='wrapper'>
+        <h2>Registration</h2>
+        <div class='content'>
+          <p>
+            <a class='btn btn-alt' href='#'>
+              Soon
+              <i class='fa fa-angle-right'></i>
+            </a>
+          </p>
+          <p>What you get with your tickets:</p>
+          <ul>
+            <li>Admission to two days of talk sessions</li>
+            <li>Access to any after-hour parties</li>
+            <li>Official Conference Shirt and goodie bag</li>
+            <li>Breakfast, Lunch and Snacks on both days</li>
+            <li>Access to our fantastic attendees and speakers</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    <section id='speakers'>
+      <article class='wrapper'>
+        <h2>Speakers</h2>
+        <div class='content'>
+          <p>
+            <a class='btn' href='call_for_papers_en.html'>
+              Call For Papers
+              <i class='fa fa-angle-right'></i>
+            </a>
+          </p>
+          <p>
+            So you think you have a crazy idea that no one would ever consider presenting in a conference?
+            That no conference committee would accept? Now we are talking.
+          </p>
+          <p>
+            Read the
+            <a href='call_for_papers_en.html'>guidelines and submit your proposal</a>
+            and get to talk in front of more than 400 rubyists!
+          </p>
+          <p>
+            We want you to speak at the next RubyConf Argentina.
+          </p>
+        </div>
+      </article>
+    </section>
+    <section id='sponsors'>
+      <article class='wrapper'>
+        <h2>Sponsors</h2>
+        <div class='content'>
+          <h3>
+            Are you interested in helping us organizing the 4th RubyConf Argentina?
+          </h3>
+          <p>
+            Check out the sponsorship brochure to see how your company can be part of one of the biggest conferences in South America.
+          </p>
+          <!-- %p -->
+          <!-- %a.btn.btn-alt{:href=>"/assets/SponsorsBrochure2014.pdf"} Download Brochure -->
+          <p>
+            <a class='btn btn-alt' href='mailto:rubyconfar@gmail.com?&amp;subject=[RubyConfAr] Consulta sobre Sponsoreo.'>Contact us</a>
+            and we'll tell you how to take advantage of this opportunity.
+          </p>
+        </div>
+      </article>
+    </section>
+    <section id='venue'>
+      <article class='wrapper'>
+        <h2>Venue</h2>
+        <div class='content'>
+          <h3>CIUDAD CULTURAL KONEX</h3>
+          <address>Sarmiento 3131, C1196AAG Buenos Aires, Capital Federal, Argentina</address>
+        </div>
+        <iframe frameborder='0' height='350' marginheight='0' marginwidth='0' scrolling='no' src='https://www.google.com/maps?q=Sarmiento+3131,+Ciudad+Aut%C3%B3noma+de+Buenos+Aires,+Argentina&amp;hnear=Sarmiento+3131,+Balvanera,+Buenos+Aires,+Argentina&amp;t=m&amp;z=14&amp;output=embed' width='100%'></iframe>
+      </article>
+    </section>
+    <footer>
+      <div class='wrapper'>
+        <div class='social-links'>
+          <a class='facebook' href='https://www.facebook.com/rubyconfar' target='_blank'>
+            <i class='fa fa-facebook-square'></i>
+          </a>
+          <a class='twitter' href='https://twitter.com/RubyConfAR' target='_blank'>
+            <i class='fa fa-twitter-square'></i>
+          </a>
+          <a class='vimeo' href='http://vimeo.com/rubyargentina' target='_blank'>
+            <i class='fa fa-vimeo-square'></i>
+          </a>
+          <a class='github' href='https://github.com/rubyargentina/rubyconfar-2014' target='_blank'>
+            <i class='fa fa-git-square'></i>
+          </a>
+        </div>
+        <div class='fb-like-box' data-colorscheme='dark' data-header='false' data-href='https://www.facebook.com/rubyconfar' data-show-border='false' data-show-faces='true' data-stream='false'></div>
+        <div class='anteriores'>
+          <h6>Eventos anteriores:</h6>
+          <ol>
+            <li>
+              <a href='http://2011.rubyconfargentina.org'>
+                <i class='fa fa-check'></i>
+                RubyConf Argentina
+                <strong>2011</strong>
+              </a>
+            </li>
+            <li>
+              <a href='http://2012.rubyconfargentina.org'>
+                <i class='fa fa-check'></i>
+                RubyConf Argentina
+                <strong>2012</strong>
+              </a>
+            </li>
+            <li>
+              <a href='http://2013.rubyconfargentina.org'>
+                <i class='fa fa-check'></i>
+                RubyConf Argentina
+                <strong>2013</strong>
+              </a>
+            </li>
+          </ol>
+        </div>
+        <h5>
+          <strong>RubyConf Argentina</strong>
+          is organized by RAAC, a non-profit organization dedicated to promoting the growth of Ruby and related technologies.
+        </h5>
+        <p>The event organizers reserve the right to refuse admission or expel any participant engaging in incorrect behavior in accordance with the provisions of law.</p>
+        <a class='twitter-follow-button' data-lang='en' data-show-count='false' data-size='large' href='https://twitter.com/rubyconfar'>Follow @rubyconfar</a>
+        <a href='http://www.szstudios.com.ar' id='sz' target='_blank'>Web design by Sz Studios</a>
+      </div>
+    </footer>
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-52654105-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
