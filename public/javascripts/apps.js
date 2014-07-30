@@ -1,10 +1,16 @@
 $(document).ready(function() {
 
-  $("section#start").height($(window).height());
-
   var arr = ['horseboy', 'erlich', 'woz', 'moss'];
-  var idx = Math.floor(Math.random() * arr.length);
-  $('section#start').addClass(arr[idx]);
+  var character = window.location.hash.substr(1);
+
+  if ($.inArray(character, arr)!==-1) {
+    $('section#start').addClass(character);
+  } else {
+    var idx = Math.floor(Math.random() * arr.length);
+    $('section#start').addClass(arr[idx]);
+  }
+
+  $("section#start").height($(window).height());
 
   $("#home nav a.circle").click(function() {
     $(this).siblings().removeClass('active');
@@ -27,28 +33,6 @@ $(document).ready(function() {
     $(this).toggleClass('active');
     return false;
   });
-
-
-  
-  if(window.location.href.indexOf("horseboy") > -1) {
-    $('section#start').removeClass();
-    $('section#start').addClass('horseboy');
-  }
-  if(window.location.href.indexOf("erlich") > -1) {
-    $('section#start').removeClass();
-    $('section#start').addClass('erlich');
-  }
-  if(window.location.href.indexOf("woz") > -1) {
-    $('section#start').removeClass();
-    $('section#start').addClass('woz');
-  }
-  if(window.location.href.indexOf("moss") > -1) {
-    $('section#start').removeClass();
-    $('section#start').addClass('moss');
-  }
-
-
-
 
 
 });
