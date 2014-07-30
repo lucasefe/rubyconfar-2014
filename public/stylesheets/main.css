@@ -1776,7 +1776,7 @@ body > footer {
 section#start {
   background: url(../images/main.png) no-repeat top center, url(../images/bkg.png) repeat-x top center;
   background-size: auto 100%; }
-  section#start.horse {
+  section#start.horseboy {
     background: url(../images/horse.png) no-repeat top center, url(../images/bkg.png) repeat-x top center;
     background-size: auto 100%; }
   section#start.woz {
