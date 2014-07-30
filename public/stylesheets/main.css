@@ -1550,6 +1550,15 @@ nav {
   nav .fist-logo {
     display: none;
     margin: 11px 0 0; }
+  nav ul li {
+    background-color: #4b5563;
+    border-radius: 13px;
+    margin-bottom: 5px; }
+    nav ul li a {
+      font-size: 12px;
+      color: #35a785; }
+    nav ul li.current a {
+      color: #ffd88f; }
   nav a {
     transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;

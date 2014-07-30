@@ -1,11 +1,10 @@
-
 $(document).ready(function() {
+
   $("section#start").height($(window).height());
 
   var arr = ['horse', 'erlich', 'woz', 'moss'];
   var idx = Math.floor(Math.random() * arr.length);
   $('section#start').addClass(arr[idx]);
-
 
   $("#home nav a.circle").click(function() {
     $(this).siblings().removeClass('active');
@@ -21,7 +20,6 @@ $(document).ready(function() {
     }
   });
 
-
   // Mobile Navigation Trigger
   $('#mobileMenuTrigger').click(function(){
     $(this).next().slideToggle();
@@ -29,7 +27,6 @@ $(document).ready(function() {
     $(this).toggleClass('active');
     return false;
   });
-  
 
 });
 
