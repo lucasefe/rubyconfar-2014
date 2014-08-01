@@ -121,22 +121,26 @@ a, img a {
 @-moz-keyframes spin {
   0% {
     -moz-transform: rotate(0deg); }
+
   100% {
     -moz-transform: rotate(359deg); } }
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg); }
+
   100% {
     -webkit-transform: rotate(359deg); } }
 @-o-keyframes spin {
   0% {
     -o-transform: rotate(0deg); }
+
   100% {
     -o-transform: rotate(359deg); } }
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
+
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
@@ -1780,6 +1784,9 @@ section#start {
     background-size: auto 100%; }
   section#start.moss {
     background: url(../images/moss.png) no-repeat top center, url(../images/bkg.png) repeat-x top center;
+    background-size: auto 100%; }
+  section#start.staplerguy {
+    background: url(../images/staplerguy.png) no-repeat top center, url(../images/bkg.png) repeat-x top center;
     background-size: auto 100%; }
   section#start hgroup {
     bottom: 200px;

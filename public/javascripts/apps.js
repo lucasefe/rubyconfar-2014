@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var arr = ['horseboy', 'erlich', 'woz', 'moss'];
+  var arr = ['horseboy', 'erlich', 'woz', 'moss', 'staplerguy'];
   var character = window.location.hash.substr(1);
 
   if ($.inArray(character, arr)!==-1) {
