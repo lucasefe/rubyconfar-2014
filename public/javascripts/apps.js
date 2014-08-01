@@ -63,9 +63,9 @@ $(window).scroll(function(){
 
 });
 
-
-
-
-
+  // Cleans URL of dirty hashtag.
+  $(window).load(function(){
+    history.pushState("", document.title, window.location.pathname);
+  });
 
 
