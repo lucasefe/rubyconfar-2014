@@ -1,6 +1,6 @@
 - content_for(:body_id) {"cfp"}
-- content_for(:title) {"Call For Papers | "}
-
+- content_for(:lang) {"es"}
+- content_for(:title) {"Convocatoria a Charlas | "}
 
 %header
   .podio
@@ -10,74 +10,67 @@
 
 #top
   .wrapper
-    %h1 Call for Papers
-
-
-
+    %h1 Convocatoria a Charlas
 
 %section
 
   %article.wrapper
-    %h1 Call for Papers
+    %h1 Convocatoria a Charlas
 
-    %h2{title: "Why"} Why
-    %p
-      A conference like RubyConf Argentina is all about new ideas, getting a renewed perspective on old topics, encouraging discussion and getting to know new people. Having a good roster of already established, well-known speakers is not enough to guarantee that.
-      %span We want you to jump on stage
-      and show everyone what you have - maybe you created a new library, or have an idea worth exploring, or want to share some of your experiences.
-    %p
-      In fact, we belive so much that new faces are to be on the spotlight of a conference, that we go to great lenghts in making selected speakers comfortable so they can rock the stage:
-      %span we will take care of accomodation expenses, transfers from the airport to the hotel
-      , and much more!
-  %article.wrapper
-    / %img.cfp{alt: "Guidelines - Call for papers", src: "http://assets2014-1.baruco.org/assets/guidelines_call_for_papers-0b4bb8c44afd726b4596e5015ad8e765.svg", title: "Guidelines - RubyConf Argentina Call for papers"}/
-    %h2{title: "Guidelines"} Guidelines
-    %ul
-      %li
-        You can submit your proposal via this form no later than
-        %span August the 1st 2014, 23:59 CEST
-      %li
-        You will be able to send
-        %span as much proposals as you want.
-      %li
-        %span You can modify your proposals any time
-        before August the 1st 2014, 23:59 CEST
-      %li The main conference's theme is the Ruby programming language. We highly encourage you to choose a topic that is somehow related to it, either directly or tangentially - that being said, we're open to original mind-blowing proposals.
-      %li The talk duration must be around 30 minutes, plus 10min for Q&A.
-      %li The video provided is just to show your speaking skills. It doesn't matter if it's from a fancy high-tech conf or from the comfort of your sofa. It doesn't have to be related to your submitted topic - that's what the description is for!
-  %article.wrapper
-    / %img.cfp{alt: "Selection process - Call for papers", src: "http://assets2014-1.baruco.org/assets/selection_process_call_for_papers-042e90c1948d5db5899591b2b1c6af2d.svg", title: "Selection process - RubyConf Argentina Call for papers"}/
-    %h2{title: "Selection process"} Selection process
-    %ul
-      %li
-        There are
-        %span 4 speaker slots
-        reserved to the call for papers.
-      %li The selection process will be managed by a closed commitee formed by the RubyConf Argentina organizers.
-      %li We will follow a 2-step voting process:  Topic triage (being blind about who it is from), and a second phase where we vote based on the video provided. In case of draw, a third voting phase could take place.
-      %li We won't publish the votes either publicly or privately.
-      %li The selected list of speaker will be announced publicly via social networks and e-mail, as well as privately to each participant.
-  %article.wrapper
-    / %img.cfp{alt: "What you get - Call for papers", src: "http://assets2014-3.baruco.org/assets/what_you_get-41e05282cf477c6c7beb4fe8770968a1.svg", title: "What you get - RubyConf Argentina Call for papers"}/
-    %h2{title: "What you get"} What you get
-    %ul
-      %li
-        %strong Free ticket
-        to the conference (all goodies included!).
-      %li
-        3 nights of
-        %strong paid accommodation
-        at the
-        %strong NH Constanza 4 star hotel
-        (1 minute walk from the venue).
-      %li Transfer from airport to hotel.
-      %li Appearance in the conference's leaflet, website, etc.
-      %li Speakers' dinner.
-      %li
-        Unfortunately we’re
-        = succeed "," do
-          %strong not able to cover any flight costs
-      
-      
-    %a.submit.btn.btn-alt{href: "/mandale"} Submit proposal
+    %h2{title: "Why"} ¿Por qué? 
+    %p 
+      Conferencias como RubyConf Argentina tratan principalmente sobre ideas, renovar nuestra perspectiva de conceptos pasados, fomentar la discusión y conocer a nuevos amigos. Tener un panel de oradores famosos y establecidos no es suficiente para garantizar esto. Queremos que asaltes el escenario y les muestres a todos lo que tenés: puede ser una nueva librería en la que estuviste trabajando, una idea que merezca la pena ser explorada y dada a conocer, o compartir algunas de tus experiencias.
+    %p 
+      De hecho creemos tan firmemente que las caras nuevas deberían ser las destacadas en una conferencia que hacemos lo imposible porque nuestros oradores se sientan cómodos para demoler el escenario. ¡Estén atentos a más anuncios!
 
+  %article.wrapper
+    %h2{title: "Instrucciones"} Instrucciones
+    %ul
+      %li
+        Podrás enviar tu propuesta a través de este formulario hasta el 
+        %span 1ro de Septiembre de 2014 a las 23.59, horario de Argentina (zona horaria: -3.00).
+      %li
+        Puedes enviar tantas propuestas como quieras.
+      %li
+        La duración de las charlas deberá ser de no más de 30 minutos.
+      %li
+        El tema principal de la conferencia es el lenguaje de programación Ruby. Te aconsejamos elegir un tópico para tu charla que esté de alguna manera relacionado, ya sea directa o tangencialmente. Habiendo dicho esto, también estamos abiertos a propuestas que nos vuelen la cabeza.
+
+    %h2 Temas sugeridos
+
+    %ul
+      %li Inteligencia Artificial
+      %li Robótica
+      %li Seguridad / Criptografía / Hacking
+      %li Bases de datos
+      %li Educación
+      %li Arte
+
+  %article.wrapper
+    %h2{title: "Selection process"} Proceso de selección
+    %ul
+
+
+      %li El proceso de selección será conducido por un comité cerrado formado por los organizadores de la RubyConf Argentina. 
+      %li No se dará a conocer los votos pública ni privadamente. 
+      %li La lista de oradores elegidos será anunciada públicamente a través de redes sociales, email y de manera personal a cada orador. 
+
+  %article.wrapper
+    %h2{title: "Lo que obtienes"} Lo que obtienes
+    %ul
+      %li
+        Entrada libre a la conferencia (¡bolsa de regalos incluida!). 
+      %li
+        Aparición en el programa, website y demás medios emitidos por la conferencia. 
+      %li 
+        Speakers’ Day: un día de campo con los demás oradores y organizadores para conocernos antes del evento principal.
+      %li
+        Dado que RubyConf Argentina está organizada por una asociación sin fines de lucro, 
+        %strong no podremos cubrir los gastos de los oradores
+        (*)
+        
+      
+    %a.submit.btn.btn-alt{href: "https://docs.google.com/forms/d/1HWyHYwzDYywbOYP1TsT_yIbdr06xovf_W6Dpee4CiM4/viewform", target:"_blank"} ¡Envía tu propuesta!
+    %br
+    %br
+    %p (*) Si conocés una empresa que esté dispuesta a cubrir tus gastos de vuelo y alojamiento, consideraremos incluirla como sponsor de la conferencia. 

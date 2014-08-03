@@ -1,11 +1,16 @@
-
 $(document).ready(function() {
+
+  var arr = ['horseboy', 'erlich', 'woz', 'moss', 'staplerguy'];
+  var character = window.location.hash.substr(1);
+
+  if ($.inArray(character, arr)!==-1) {
+    $('section#start').addClass(character);
+  } else {
+    var idx = Math.floor(Math.random() * arr.length);
+    $('section#start').addClass(arr[idx]);
+  }
+
   $("section#start").height($(window).height());
-
-  var arr = ['horse', 'erlich', 'woz', 'moss'];
-  var idx = Math.floor(Math.random() * arr.length);
-  $('section#start').addClass(arr[idx]);
-
 
   $("#home nav a.circle").click(function() {
     $(this).siblings().removeClass('active');
@@ -21,7 +26,6 @@ $(document).ready(function() {
     }
   });
 
-
   // Mobile Navigation Trigger
   $('#mobileMenuTrigger').click(function(){
     $(this).next().slideToggle();
@@ -29,7 +33,7 @@ $(document).ready(function() {
     $(this).toggleClass('active');
     return false;
   });
-  
+
 
 });
 
@@ -59,9 +63,9 @@ $(window).scroll(function(){
 
 });
 
-
-
-
-
+  // Cleans URL of dirty hashtag.
+  $(window).load(function(){
+    history.pushState("", document.title, window.location.pathname);
+  });
 
 
